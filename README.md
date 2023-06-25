@@ -13,8 +13,6 @@ We add "UTC" timezone
 
 ### Base user
 
-We use same user in all our applications
-
 | key      | value     |
 |----------|-----------|
 | username | dockdock  |
