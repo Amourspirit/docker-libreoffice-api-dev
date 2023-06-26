@@ -27,10 +27,15 @@ This version of LibreOffice API expose the port 2002
 
 - LO-7.5
 
+## BASH_RC
+
+The `.bashrc` can be extended by creating a `.bashrc_custom` file in the home directory of the user.
+This file will be sourced automatically.
+
 ## Build
 
 ```bash
-docker build -t dockdock/libreoffice-api-full:LO-7.5 .
+docker build -t dockdock/libreoffice-api-dev:LO-7.5 .
 ```
 
 
