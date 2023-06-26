@@ -36,10 +36,14 @@ RUN cat bashrc.txt >> .bashrc \
     && git config --global alias.type "cat-file -t" \
     && git config --global alias.dump "cat-file -p"
 
+# Init the /root/.config/libreoffice/4/user/ folder
+RUN soffice --headless --terminate_after_init
+
 USER dockdock
 WORKDIR /home/dockdock
 
 COPY ./bashrc.txt .
+
 
 RUN cat bashrc.txt >> .bashrc \
     && rm bashrc.txt \
